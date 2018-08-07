@@ -1,8 +1,8 @@
-#cbpi-DynDns
+# cbpi-DynDns
 Add DynDns Support to crafteerpi3
 
 
-#Installation
+## Installation
 - Create an accout at www.dynv6.com and create a DynDns
 - Install the plugin in your cbpi
 
