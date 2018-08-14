@@ -13,6 +13,7 @@ def update_DynDns(app):
             ipv4 = ipv4.read()
         except:
             cbpi.notify('DynDns',"IPv4 Timeout - Please check your internet connection or configuration.", type = 'danger')
+            ipv4 = ""
         
     #''''''''''''''''''''''''''''''''''''''''''''''''''''
     # Get IPv6
@@ -23,6 +24,7 @@ def update_DynDns(app):
             ipv6 = ipv6.read()
         except:
             cbpi.notify('DynDns',"IPv6 Timeout - Please check your internet connection or configuration.", type = 'danger')
+            ipv6 = ""
         
     #''''''''''''''''''''''''''''''''''''''''''''''''''''
     # Build URL for update
