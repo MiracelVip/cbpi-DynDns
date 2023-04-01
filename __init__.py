@@ -1,5 +1,5 @@
 from modules import cbpi
-from urllib2 import urlopen
+from urllib.request import urlopen
 
 
 @cbpi.backgroundtask(key="Update_DynDns", interval=600)
@@ -47,7 +47,7 @@ def update_DynDns(app):
         cbpi.notify('DynDns',"Update failed - Please check your internet connection or configuration. " + url, type = 'danger', timeout=None)
         return
     
-    print(update[:12]) #dynv6.com return "/n" 
+    print((update[:12])) #dynv6.com return "/n" 
     if update[:12] == "addresses un":
         cbpi.app.logger.info("DynDns - Adresses unchanged")
     elif update[:12] == "addresses up":
